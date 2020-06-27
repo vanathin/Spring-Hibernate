@@ -22,7 +22,7 @@ public class WorkerController {
     private WorkerDAOImpl daoImpl;
 
     @PostMapping(path="/workers")
-    public ResponseEntity<Staff> save(@RequestBody Worker emp){
+    public ResponseEntity<Worker> save(@RequestBody Worker emp){
         long id = daoImpl.saveOrUpdate(emp);
         URI location = ServletUriComponentsBuilder
                 .fromCurrentRequest()
@@ -32,6 +32,101 @@ public class WorkerController {
         return ResponseEntity.created(location).build();
     }
 
+    @PostMapping(path="/rollBackForRunTimeException")
+    public ResponseEntity<Worker> rollBackForRunTimeException(@RequestBody Worker emp){
+        long id = daoImpl.rollBackForRunTimeException(emp);
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(id)
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
+    @PostMapping(path="/rollBackForException")
+    public ResponseEntity<Worker> rollBackForException(@RequestBody Worker emp)  throws Exception{
+        long id = daoImpl.rollBackForException(emp);
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(id)
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
+
+    @PostMapping(path="/noRollBackForExp")
+    public ResponseEntity<Worker> noRollBackForException(@RequestBody Worker emp)  throws Exception{
+        long id = daoImpl.noRollBackForException(emp);
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(id)
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
+
+
+    @PostMapping(path="/propagationRequired")
+    public ResponseEntity<Worker> propagationRequired(@RequestBody Worker emp){
+        long id = daoImpl.propagationRequired(emp);
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(id)
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
+
+    @PostMapping(path="/propagationSupport")
+    public ResponseEntity<Worker> propagationSupport(@RequestBody Worker emp){
+        long id = daoImpl.propagationSupport(emp);
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(id)
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
+    @PostMapping(path="/propagationNotSupported")
+    public ResponseEntity<Worker> propagationNotSupported(@RequestBody Worker emp){
+        long id = daoImpl.propagationNotSupported(emp);
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(id)
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
+    @PostMapping(path="/propagationRequiredNew")
+    public ResponseEntity<Worker> propagationRequiredNew(@RequestBody Worker emp){
+        long id = daoImpl.propagationRequiredNew(emp);
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(id)
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
+    @PostMapping(path="/propagationNever")
+    public ResponseEntity<Worker> propagationNever(@RequestBody Worker emp){
+        long id = daoImpl.propagationNever(emp);
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(id)
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
+    @PostMapping(path="/propagationMandatory")
+    public ResponseEntity<Worker> propagationMandatory(@RequestBody Worker emp){
+        long id = daoImpl.propagationMandatory(emp);
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(id)
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
+    //MANDATORY
     @GetMapping("/WorkersAll")
     public List<Worker> getAll(){
         return daoImpl.getAllWorker();

@@ -27,37 +27,6 @@ public class AddressDAOImpl {
                 .orElse(0);
     }
 
-    /*Propagation.SUPPORTS*/
-    /*@Transactional(propagation = Propagation.SUPPORTS)
-    public int save(Address address){
-        return Optional.ofNullable(add.save(address))
-                .map(Address::getId)
-                .orElse(0);
-    }*/
-
-    /*Propagation.NOT_SUPPORTED*/
-    /*@Transactional(propagation = Propagation.NOT_SUPPORTED)
-    public int save(Address address){
-        return Optional.ofNullable(add.save(address))
-                .map(Address::getId)
-                .orElse(0);
-    }*/
-
-    /*Propagation.REQUIRES_NEW*/
-    /*@Transactional(propagation = Propagation.REQUIRES_NEW)
-    public int save(Address address){
-        return Optional.ofNullable(add.save(address))
-                .map(Address::getId)
-                .orElse(0);
-    }*/
-
-    /*Propagation.Propagation.NEVER*/
-    /*@Transactional(propagation = Propagation.NEVER)
-    public int save(Address address){
-        return Optional.ofNullable(add.save(address))
-                .map(Address::getId)
-                .orElse(0);
-    }*/
 
     /*Propagation.Propagation.MANDATORY*/
     /*@Transactional(propagation = Propagation.MANDATORY)
