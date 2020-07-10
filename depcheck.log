@@ -1,0 +1,870 @@
+2020-06-27 09:02:56,653 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: data.directory='/home/glue/tools/dependency-check/data'
+2020-06-27 09:02:56,660 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: autoupdate='true'
+2020-06-27 09:02:56,661 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.experimental.enabled='false'
+2020-06-27 09:02:56,661 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.jar.enabled='true'
+2020-06-27 09:02:56,662 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.archive.enabled='true'
+2020-06-27 09:02:56,662 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.python.distribution.enabled='true'
+2020-06-27 09:02:56,663 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.python.package.enabled='true'
+2020-06-27 09:02:56,663 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.autoconf.enabled='true'
+2020-06-27 09:02:56,664 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.cmake.enabled='true'
+2020-06-27 09:02:56,664 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.nuspec.enabled='true'
+2020-06-27 09:02:56,664 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.assembly.enabled='true'
+2020-06-27 09:02:56,665 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.bundle.audit.enabled='true'
+2020-06-27 09:02:56,665 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.openssl.enabled='true'
+2020-06-27 09:02:56,666 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.composer.lock.enabled='true'
+2020-06-27 09:02:56,666 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.node.package.enabled='true'
+2020-06-27 09:02:56,666 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.ruby.gemspec.enabled='true'
+2020-06-27 09:02:56,667 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.central.enabled='true'
+2020-06-27 09:02:56,667 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.nexus.enabled='true'
+2020-06-27 09:02:56,667 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: analyzer.nexus.proxy='true'
+2020-06-27 09:02:56,671 org.owasp.dependencycheck.data.nvdcve.ConnectionFactory:108
+DEBUG - Loading driver: org.h2.Driver
+2020-06-27 09:02:56,675 org.owasp.dependencycheck.utils.Settings:680
+DEBUG - Settings.getDataFile() - file: '/home/glue/tools/dependency-check/data'
+2020-06-27 09:02:56,676 org.owasp.dependencycheck.utils.Settings:912
+DEBUG - Connection String: 'jdbc:h2:file:/home/glue/tools/dependency-check/data/dc;FILE_LOCK=SERIALIZED;AUTOCOMMIT=ON;'
+2020-06-27 09:02:56,677 org.owasp.dependencycheck.utils.Settings:680
+DEBUG - Settings.getDataFile() - file: '/home/glue/tools/dependency-check/data'
+2020-06-27 09:02:56,677 org.owasp.dependencycheck.data.nvdcve.ConnectionFactory:138
+DEBUG - Need to create DB Structure: true
+2020-06-27 09:02:56,678 org.owasp.dependencycheck.data.nvdcve.ConnectionFactory:144
+DEBUG - Loading database connection
+2020-06-27 09:02:56,678 org.owasp.dependencycheck.data.nvdcve.ConnectionFactory:145
+DEBUG - Connection String: jdbc:h2:file:/home/glue/tools/dependency-check/data/dc;FILE_LOCK=SERIALIZED;AUTOCOMMIT=ON;
+2020-06-27 09:02:56,678 org.owasp.dependencycheck.data.nvdcve.ConnectionFactory:146
+DEBUG - Database User: dcuser
+2020-06-27 09:02:57,355 org.owasp.dependencycheck.data.nvdcve.ConnectionFactory:259
+DEBUG - Creating database structure
+2020-06-27 09:02:57,389 org.owasp.dependencycheck.data.nvdcve.ConnectionFactory:385
+DEBUG - Current Schema: 3.0
+2020-06-27 09:02:57,390 org.owasp.dependencycheck.data.nvdcve.ConnectionFactory:386
+DEBUG - DB Schema: 2.9
+2020-06-27 09:02:57,392 org.owasp.dependencycheck.data.nvdcve.ConnectionFactory:305
+DEBUG - Updating database structure
+2020-06-27 09:02:57,453 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer Archive Analyzer
+2020-06-27 09:02:57,455 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer File Name Analyzer
+2020-06-27 09:02:57,457 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer Jar Analyzer
+2020-06-27 09:02:57,459 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer Hint Analyzer
+2020-06-27 09:02:57,462 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer CPE Analyzer
+2020-06-27 09:02:57,465 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer False Positive Analyzer
+2020-06-27 09:02:57,466 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer Cpe Suppression Analyzer
+2020-06-27 09:02:57,468 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer Dependency Bundling Analyzer
+2020-06-27 09:02:57,469 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer NVD CVE Analyzer
+2020-06-27 09:02:57,470 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer Vulnerability Suppression Analyzer
+2020-06-27 09:02:57,471 org.owasp.dependencycheck.analyzer.CentralAnalyzer:112
+DEBUG - Enabling the Central analyzer
+2020-06-27 09:02:57,472 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer Central Analyzer
+2020-06-27 09:02:57,473 org.owasp.dependencycheck.analyzer.NexusAnalyzer:118
+DEBUG - Nexus analyzer disabled, using Central instead
+2020-06-27 09:02:57,474 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer Nexus Analyzer
+2020-06-27 09:02:57,475 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer Nuspec Analyzer
+2020-06-27 09:02:57,477 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer Assembly Analyzer
+2020-06-27 09:02:57,493 org.owasp.dependencycheck.analyzer.AnalyzerService:73
+DEBUG - Loaded Analyzer OpenSSL Source Analyzer
+2020-06-27 09:02:57,503 org.owasp.dependencycheck.App:228
+DEBUG - Scanning /src
+2020-06-27 09:03:02,814 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/COMMIT_EDITMSG
+2020-06-27 09:03:02,814 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/HEAD
+2020-06-27 09:03:02,815 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/config
+2020-06-27 09:03:02,815 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/description
+2020-06-27 09:03:02,815 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/hooks/applypatch-msg.sample
+2020-06-27 09:03:02,816 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/hooks/commit-msg.sample
+2020-06-27 09:03:02,816 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/hooks/fsmonitor-watchman.sample
+2020-06-27 09:03:02,817 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/hooks/post-update.sample
+2020-06-27 09:03:02,817 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/hooks/pre-applypatch.sample
+2020-06-27 09:03:02,818 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/hooks/pre-commit.sample
+2020-06-27 09:03:02,818 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/hooks/pre-push.sample
+2020-06-27 09:03:02,819 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/hooks/pre-rebase.sample
+2020-06-27 09:03:02,819 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/hooks/pre-receive.sample
+2020-06-27 09:03:02,820 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/hooks/prepare-commit-msg.sample
+2020-06-27 09:03:02,820 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/hooks/update.sample
+2020-06-27 09:03:02,821 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/index
+2020-06-27 09:03:02,821 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/info/exclude
+2020-06-27 09:03:02,822 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/logs/HEAD
+2020-06-27 09:03:02,822 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/logs/refs/heads/master
+2020-06-27 09:03:02,822 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/logs/refs/remotes/origin/master
+2020-06-27 09:03:02,823 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/00/4ba9416e65290f3af1e91d82c869f66eefcf4f
+2020-06-27 09:03:02,823 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/07/878adc18d8fcc2282fd1eda82afe417c978411
+2020-06-27 09:03:02,824 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/0a/2fed0397eff3a703881c8ea3505cfde395550b
+2020-06-27 09:03:02,824 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/0a/ed33f4cb812f194124f7b3caf650905ea852db
+2020-06-27 09:03:02,824 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/0f/c81538e64b4d2dd7be3784b1a4e7a39387a673
+2020-06-27 09:03:02,825 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/11/7203efd897c2e0714d8141a016e5b453fdcb71
+2020-06-27 09:03:02,825 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/13/53d1bbb6f54a9368f462cef685fe2c81691371
+2020-06-27 09:03:02,826 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/1a/b80c4df36f47c9a7990d34f30ab3f74e919235
+2020-06-27 09:03:02,826 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/24/b271b1e0bee8a225fd9508ed37d9fa101b1866
+2020-06-27 09:03:02,826 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/24/cf58d6a214402905eac02b1e07b7c9dac4aabc
+2020-06-27 09:03:02,827 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/27/e6449d2c9b973cf1c6d94ffa6c95d2e23743d4
+2020-06-27 09:03:02,827 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/2a/5f5f824b5a858ef4bc622d0215bbd0c64d4e4f
+2020-06-27 09:03:02,827 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/2c/c7d4a55c0cd0092912bf49ae38b3a9e3fd0054
+2020-06-27 09:03:02,828 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/2e/fc8f93b148cf40d2dd551a74d1e182ddf7b7d3
+2020-06-27 09:03:02,828 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/31/2d481ec166f10a25c0b8df4a53dfafb8c6935e
+2020-06-27 09:03:02,829 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/36/a84e7e982f91ef68c7a3f2a3690f5787b97670
+2020-06-27 09:03:02,829 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/3a/bb58db9da50a4921cf07e16125a23d588c47e2
+2020-06-27 09:03:02,830 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/3e/4695f35e523203467f55453f36d5e922feaa76
+2020-06-27 09:03:02,830 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/40/587973dd0c7e3787280626f6b088650fe028e8
+2020-06-27 09:03:02,830 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/46/b4461124c5872e271b91e610bca0ae26806ba7
+2020-06-27 09:03:02,831 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/47/8aa61d61c42d3060e77e5eff493eabb31b6a3c
+2020-06-27 09:03:02,831 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/49/0fa4295811657b7e4a2a2693dab8abb35a87a1
+2020-06-27 09:03:02,831 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/4b/052e44045d6277828710b601b37a015ea2f51f
+2020-06-27 09:03:02,832 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/4d/18280404f615633684fc708a55049f3bb32b84
+2020-06-27 09:03:02,832 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/4f/b37929e4fe76e42dc94db5baac4fb10eb4052c
+2020-06-27 09:03:02,832 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/56/2445d0079599e7cd7b248ab61c257398686b04
+2020-06-27 09:03:02,833 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/58/93235989b60a873c3b9d61e425a552b2f0f5d5
+2020-06-27 09:03:02,833 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/60/56f3e5d07a03d55c22803379d3c2ab842ffbba
+2020-06-27 09:03:02,834 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/64/2d572ce90e5085986bdd9c9204b9404f028084
+2020-06-27 09:03:02,834 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/64/de67997837b89371c6315f23dc5c5a54770009
+2020-06-27 09:03:02,835 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/66/a33bdc30d7aae6c7f88162195d06aa37d54510
+2020-06-27 09:03:02,835 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/71/63b3b351351801429e473d6f2dd9ef9f9541b7
+2020-06-27 09:03:02,835 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/71/ab43fb2f899b990c6c98f60776eba68d1a2d9c
+2020-06-27 09:03:02,836 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/76/052317d92e9075c4ebe2ff6c6a413071e04067
+2020-06-27 09:03:02,836 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/7c/4ae776ccb8ad75eba595a44c931a3f16a198ec
+2020-06-27 09:03:02,836 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/80/2f288341e11b9e9b67784110f4728458756f5a
+2020-06-27 09:03:02,837 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/8c/774490997784ff3fd6037dcea35f827c8f84ec
+2020-06-27 09:03:02,837 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/8e/80885b0098c8871b332b794db2ae3501bb5528
+2020-06-27 09:03:02,838 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/8e/c3a47b3bbb7e57ea34dd1822016d9cdfd2c893
+2020-06-27 09:03:02,838 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/90/8c44f18eb18aba2277950aefe2a013cff2277a
+2020-06-27 09:03:02,838 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/96/80dcdf1ba7ca2bac760c7ca1eed03315af7e85
+2020-06-27 09:03:02,839 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/9a/6cad3838d861953aa8c215b4a81b4b6650baf3
+2020-06-27 09:03:02,839 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/a1/6b5431b4c3cab50323a3f558003fd0abd87dad
+2020-06-27 09:03:02,839 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/a2/a3040aa86debfd8826d9c2b5c816314c17d9fe
+2020-06-27 09:03:02,840 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/a3/2ffab8546edab227615e015ee9f9e9e562a8ee
+2020-06-27 09:03:02,840 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/a9/ec00611291eb8ccda7e859e00b68fb15610220
+2020-06-27 09:03:02,840 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/aa/35386fcd0d6d54fc5fdd98db861a2bd92ebfe5
+2020-06-27 09:03:02,841 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/b0/faa4662ea7a1714aa7b94a8adbb7770d02e371
+2020-06-27 09:03:02,841 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/ba/00a7d13f4925c1b24ea78a6a6223e93927f828
+2020-06-27 09:03:02,841 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/bd/1863773e2c2196b2c19197c1579ea60a1ef6d3
+2020-06-27 09:03:02,842 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/be/7af30f5129bfa87b2f8a74336b55f4076b33c2
+2020-06-27 09:03:02,842 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/be/ee7f2a49a844a3ba1a37807b1339a133cf3b41
+2020-06-27 09:03:02,843 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/c8/d43372c986d97911cdc21bd87e0cbe3d83bdda
+2020-06-27 09:03:02,843 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/cb/c75f391f8b04524d9f84178b0418ebf56f4a2a
+2020-06-27 09:03:02,843 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/ce/1ba36fd09e6fefa067bec9f670dc653093f57b
+2020-06-27 09:03:02,844 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/cf/d9d2aa45a04eb700dafbae021ae67d7ba14fc5
+2020-06-27 09:03:02,844 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/de/5c643723d1ab8b217ddc47beea1707bc043f89
+2020-06-27 09:03:02,845 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/df/8fc0f80ff1db1040a67117466ef32017f55432
+2020-06-27 09:03:02,845 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/df/e75dc48dc43afbdc7da551c52fc12c878d879b
+2020-06-27 09:03:02,846 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/e3/51c220a05c2238a89644ee8d0874618d61a41a
+2020-06-27 09:03:02,846 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/e4/69348c99a5bb0b1d2dd1927ed50e7dfdd22e9a
+2020-06-27 09:03:02,847 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/e4/ba2d3edf604ca941351170e07574ded6ed79bc
+2020-06-27 09:03:02,847 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/e5/1b5c80f56a05d676322ffcab82ad652b4e0a92
+2020-06-27 09:03:02,847 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/e7/6d1f3241d38db9b28f05133823bbed1ad289ff
+2020-06-27 09:03:02,848 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/e7/e2f1a695b9cf9ded2eb2488b960a685e16842b
+2020-06-27 09:03:02,848 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/eb/1025a33d73c37ac070a0110b732eaef10d3167
+2020-06-27 09:03:02,848 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/ef/6bc7273f00a4c79ffaa51f79ce3b57aedcb836
+2020-06-27 09:03:02,849 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/fb/144e3730246d712723c6124f8933a4ba818f65
+2020-06-27 09:03:02,849 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/objects/fc/e6fccfdb9f8dbf8847d835c5ed557f1dd6334d
+2020-06-27 09:03:02,849 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/refs/heads/master
+2020-06-27 09:03:02,849 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.git/refs/remotes/origin/master
+2020-06-27 09:03:02,850 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.gitignore
+2020-06-27 09:03:02,850 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/compiler.xml
+2020-06-27 09:03:02,850 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/encodings.xml
+2020-06-27 09:03:02,851 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__antlr_antlr_2_7_7.xml
+2020-06-27 09:03:02,851 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml
+2020-06-27 09:03:02,851 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml
+2020-06-27 09:03:02,852 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml
+2020-06-27 09:03:02,852 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_0.xml
+2020-06-27 09:03:02,852 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_0.xml
+2020-06-27 09:03:02,853 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_0.xml
+2020-06-27 09:03:02,853 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_0.xml
+2020-06-27 09:03:02,854 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_0.xml
+2020-06-27 09:03:02,854 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_0.xml
+2020-06-27 09:03:02,855 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_h2database_h2_1_4_200.xml
+2020-06-27 09:03:02,855 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml
+2020-06-27 09:03:02,856 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml
+2020-06-27 09:03:02,856 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_11.xml
+2020-06-27 09:03:02,857 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml
+2020-06-27 09:03:02,857 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml
+2020-06-27 09:03:02,858 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml
+2020-06-27 09:03:02,858 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml
+2020-06-27 09:03:02,858 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml
+2020-06-27 09:03:02,859 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml
+2020-06-27 09:03:02,859 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml
+2020-06-27 09:03:02,860 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_11.xml
+2020-06-27 09:03:02,860 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_11.xml
+2020-06-27 09:03:02,860 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml
+2020-06-27 09:03:02,861 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml
+2020-06-27 09:03:02,861 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml
+2020-06-27 09:03:02,862 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml
+2020-06-27 09:03:02,862 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_36.xml
+2020-06-27 09:03:02,862 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_36.xml
+2020-06-27 09:03:02,863 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml
+2020-06-27 09:03:02,863 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml
+2020-06-27 09:03:02,863 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml
+2020-06-27 09:03:02,864 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml
+2020-06-27 09:03:02,864 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml
+2020-06-27 09:03:02,864 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_3.xml
+2020-06-27 09:03:02,864 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_3.xml
+2020-06-27 09:03:02,865 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml
+2020-06-27 09:03:02,865 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml
+2020-06-27 09:03:02,865 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_17_Final.xml
+2020-06-27 09:03:02,865 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml
+2020-06-27 09:03:02,866 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_jboss_jandex_2_1_3_Final.xml
+2020-06-27 09:03:02,866 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml
+2020-06-27 09:03:02,866 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_2.xml
+2020-06-27 09:03:02,866 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml
+2020-06-27 09:03:02,867 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml
+2020-06-27 09:03:02,867 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_2.xml
+2020-06-27 09:03:02,868 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml
+2020-06-27 09:03:02,868 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml
+2020-06-27 09:03:02,868 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml
+2020-06-27 09:03:02,869 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml
+2020-06-27 09:03:02,869 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml
+2020-06-27 09:03:02,870 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml
+2020-06-27 09:03:02,870 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml
+2020-06-27 09:03:02,870 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml
+2020-06-27 09:03:02,871 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml
+2020-06-27 09:03:02,871 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml
+2020-06-27 09:03:02,872 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml
+2020-06-27 09:03:02,872 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,872 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,873 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,873 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,874 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,874 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,874 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,874 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,875 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,875 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,875 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,876 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,876 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,876 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,877 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,877 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_3_1_RELEASE.xml
+2020-06-27 09:03:02,877 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_aop_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,877 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,878 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_beans_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,878 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_context_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,878 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_core_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,878 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_expression_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,879 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,879 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,879 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_orm_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,880 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_test_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,880 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_tx_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,880 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_web_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,881 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_7_RELEASE.xml
+2020-06-27 09:03:02,881 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml
+2020-06-27 09:03:02,881 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml
+2020-06-27 09:03:02,882 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/misc.xml
+2020-06-27 09:03:02,882 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/modules.xml
+2020-06-27 09:03:02,882 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/uiDesigner.xml
+2020-06-27 09:03:02,882 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/vcs.xml
+2020-06-27 09:03:02,883 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.idea/workspace.xml
+2020-06-27 09:03:02,883 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.mvn/wrapper/MavenWrapperDownloader.java
+2020-06-27 09:03:02,883 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.mvn/wrapper/maven-wrapper.jar
+2020-06-27 09:03:02,883 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/.mvn/wrapper/maven-wrapper.properties
+2020-06-27 09:03:02,884 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/HELP.md
+2020-06-27 09:03:02,884 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/depcheck.log
+2020-06-27 09:03:02,885 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/mvnw
+2020-06-27 09:03:02,885 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/mvnw.cmd
+2020-06-27 09:03:02,886 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/pom.xml
+2020-06-27 09:03:02,886 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/spring-boot-hibernate.iml
+2020-06-27 09:03:02,886 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/ServletInitializer.java
+2020-06-27 09:03:02,887 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/SpringBootHibernateApplication.java
+2020-06-27 09:03:02,887 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/bean/Address.java
+2020-06-27 09:03:02,887 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/bean/Employee.java
+2020-06-27 09:03:02,888 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/bean/onetoone/Phone.java
+2020-06-27 09:03:02,888 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/bean/onetoone/Staff.java
+2020-06-27 09:03:02,888 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/bean/onetoonebi/EmployeeInfo.java
+2020-06-27 09:03:02,889 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/bean/onetoonebi/PersonalInfo.java
+2020-06-27 09:03:02,890 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/bean/onetoonejointable/Resource.java
+2020-06-27 09:03:02,890 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/bean/onetoonejointable/WorkStation.java
+2020-06-27 09:03:02,891 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/bean/onetoonejointable/Worker.java
+2020-06-27 09:03:02,891 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/controller/EmployeeController.java
+2020-06-27 09:03:02,892 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/controller/OneToOneBiEmpInfoController.java
+2020-06-27 09:03:02,892 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/controller/StaffController.java
+2020-06-27 09:03:02,893 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/controller/WorkerController.java
+2020-06-27 09:03:02,893 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/dao/AddressDAO.java
+2020-06-27 09:03:02,894 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/dao/EmployeeDAO.java
+2020-06-27 09:03:02,894 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/dao/OneToOneBiEmpInfoDAO.java
+2020-06-27 09:03:02,895 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/dao/ResouceDAO.java
+2020-06-27 09:03:02,895 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/dao/StaffDAO.java
+2020-06-27 09:03:02,895 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/dao/WorkerDAO.java
+2020-06-27 09:03:02,896 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/daoimpl/AddressDAOImpl.java
+2020-06-27 09:03:02,896 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/daoimpl/EmployeeDAOImpl.java
+2020-06-27 09:03:02,896 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/daoimpl/OneToOneBiEmpInfoDAOImpl.java
+2020-06-27 09:03:02,896 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/daoimpl/ResourceDAOImpl.java
+2020-06-27 09:03:02,897 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/daoimpl/StaffDAOImpl.java
+2020-06-27 09:03:02,897 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/java/com/learning/springboothibernate/daoimpl/WorkerDAOImpl.java
+2020-06-27 09:03:02,897 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/main/resources/application.properties
+2020-06-27 09:03:02,898 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/src/test/java/com/learning/springboothibernate/SpringBootHibernateApplicationTests.java
+2020-06-27 09:03:02,899 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/META-INF/spring-boot-hibernate.kotlin_module
+2020-06-27 09:03:02,899 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/application.properties
+2020-06-27 09:03:02,899 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/ServletInitializer.class
+2020-06-27 09:03:02,900 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/SpringBootHibernateApplication.class
+2020-06-27 09:03:02,900 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/bean/Address.class
+2020-06-27 09:03:02,901 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/bean/Employee.class
+2020-06-27 09:03:02,902 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/bean/onetoone/Phone.class
+2020-06-27 09:03:02,902 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/bean/onetoone/Staff.class
+2020-06-27 09:03:02,903 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/bean/onetoonebi/EmployeeInfo.class
+2020-06-27 09:03:02,903 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/bean/onetoonebi/PersonalInfo.class
+2020-06-27 09:03:02,903 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/bean/onetoonejointable/Resource.class
+2020-06-27 09:03:02,904 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/bean/onetoonejointable/WorkStation.class
+2020-06-27 09:03:02,904 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/bean/onetoonejointable/Worker.class
+2020-06-27 09:03:02,904 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/controller/EmployeeController.class
+2020-06-27 09:03:02,905 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/controller/OneToOneBiEmpInfoController.class
+2020-06-27 09:03:02,905 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/controller/StaffController.class
+2020-06-27 09:03:02,906 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/controller/WorkerController.class
+2020-06-27 09:03:02,906 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/dao/AddressDAO.class
+2020-06-27 09:03:02,906 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/dao/EmployeeDAO.class
+2020-06-27 09:03:02,906 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/dao/OneToOneBiEmpInfoDAO.class
+2020-06-27 09:03:02,907 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/dao/ResouceDAO.class
+2020-06-27 09:03:02,907 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/dao/StaffDAO.class
+2020-06-27 09:03:02,907 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/dao/WorkerDAO.class
+2020-06-27 09:03:02,908 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/daoimpl/AddressDAOImpl.class
+2020-06-27 09:03:02,908 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/daoimpl/EmployeeDAOImpl.class
+2020-06-27 09:03:02,909 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/daoimpl/OneToOneBiEmpInfoDAOImpl.class
+2020-06-27 09:03:02,909 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/daoimpl/ResourceDAOImpl.class
+2020-06-27 09:03:02,909 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/daoimpl/StaffDAOImpl.class
+2020-06-27 09:03:02,909 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/classes/com/learning/springboothibernate/daoimpl/WorkerDAOImpl.class
+2020-06-27 09:03:02,910 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/maven-archiver/pom.properties
+2020-06-27 09:03:02,910 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+2020-06-27 09:03:02,910 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+2020-06-27 09:03:02,911 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+2020-06-27 09:03:02,911 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+2020-06-27 09:03:02,911 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT.war
+2020-06-27 09:03:02,912 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT.war.original
+2020-06-27 09:03:02,912 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties
+2020-06-27 09:03:02,912 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/classes/com/learning/springboothibernate/ServletInitializer.class
+2020-06-27 09:03:02,913 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/classes/com/learning/springboothibernate/SpringBootHibernateApplication.class
+2020-06-27 09:03:02,913 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/classes/com/learning/springboothibernate/bean/Employee.class
+2020-06-27 09:03:02,913 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/classes/com/learning/springboothibernate/configuration/HibernateConfiguration.class
+2020-06-27 09:03:02,913 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/classes/com/learning/springboothibernate/controller/EmployeeController.class
+2020-06-27 09:03:02,914 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/classes/com/learning/springboothibernate/dao/EmployeeDAO.class
+2020-06-27 09:03:02,914 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/classes/com/learning/springboothibernate/daoimpl/EmployeeDAOImpl.class
+2020-06-27 09:03:02,914 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/classes/data.sql
+2020-06-27 09:03:02,914 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/HikariCP-3.4.5.jar
+2020-06-27 09:03:02,915 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar
+2020-06-27 09:03:02,915 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.9.5.jar
+2020-06-27 09:03:02,915 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/byte-buddy-1.10.11.jar
+2020-06-27 09:03:02,915 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/classmate-1.5.1.jar
+2020-06-27 09:03:02,916 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/dom4j-2.1.3.jar
+2020-06-27 09:03:02,916 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/h2-1.4.200.jar
+2020-06-27 09:03:02,916 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar
+2020-06-27 09:03:02,917 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-core-5.4.17.Final.jar
+2020-06-27 09:03:02,917 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/istack-commons-runtime-3.0.11.jar
+2020-06-27 09:03:02,918 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.11.0.jar
+2020-06-27 09:03:02,920 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.11.0.jar
+2020-06-27 09:03:02,920 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.11.0.jar
+2020-06-27 09:03:02,921 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.11.0.jar
+2020-06-27 09:03:02,921 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.11.0.jar
+2020-06-27 09:03:02,922 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.11.0.jar
+2020-06-27 09:03:02,922 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.activation-1.2.2.jar
+2020-06-27 09:03:02,922 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.activation-api-1.2.2.jar
+2020-06-27 09:03:02,922 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar
+2020-06-27 09:03:02,923 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.el-3.0.3.jar
+2020-06-27 09:03:02,924 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.persistence-api-2.2.3.jar
+2020-06-27 09:03:02,924 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.transaction-api-1.3.3.jar
+2020-06-27 09:03:02,924 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.xml.bind-api-2.3.3.jar
+2020-06-27 09:03:02,924 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jandex-2.1.3.Final.jar
+2020-06-27 09:03:02,925 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/javassist-3.24.0-GA.jar
+2020-06-27 09:03:02,925 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jaxb-runtime-2.3.3.jar
+2020-06-27 09:03:02,925 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-logging-3.4.1.Final.jar
+2020-06-27 09:03:02,925 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.30.jar
+2020-06-27 09:03:02,926 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-api-2.13.3.jar
+2020-06-27 09:03:02,926 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.13.3.jar
+2020-06-27 09:03:02,926 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar
+2020-06-27 09:03:02,926 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar
+2020-06-27 09:03:02,927 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.30.jar
+2020-06-27 09:03:02,927 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/snakeyaml-1.26.jar
+2020-06-27 09:03:02,927 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.7.RELEASE.jar
+2020-06-27 09:03:02,927 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aspects-5.2.7.RELEASE.jar
+2020-06-27 09:03:02,928 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.7.RELEASE.jar
+2020-06-27 09:03:02,928 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,928 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,928 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,929 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-aop-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,929 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-data-jpa-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,929 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,929 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,930 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,930 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-security-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,930 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-tomcat-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,930 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,931 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-5.2.7.RELEASE.jar
+2020-06-27 09:03:02,931 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-5.2.7.RELEASE.jar
+2020-06-27 09:03:02,931 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-commons-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,931 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-jpa-2.3.1.RELEASE.jar
+2020-06-27 09:03:02,932 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.7.RELEASE.jar
+2020-06-27 09:03:02,933 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.7.RELEASE.jar
+2020-06-27 09:03:02,933 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.2.7.RELEASE.jar
+2020-06-27 09:03:02,933 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-orm-5.2.7.RELEASE.jar
+2020-06-27 09:03:02,934 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-config-5.3.3.RELEASE.jar
+2020-06-27 09:03:02,934 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-core-5.3.3.RELEASE.jar
+2020-06-27 09:03:02,934 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-web-5.3.3.RELEASE.jar
+2020-06-27 09:03:02,935 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-5.2.7.RELEASE.jar
+2020-06-27 09:03:02,935 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-5.2.7.RELEASE.jar
+2020-06-27 09:03:02,935 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.2.7.RELEASE.jar
+2020-06-27 09:03:02,936 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/tomcat-embed-core-9.0.36.jar
+2020-06-27 09:03:02,936 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/tomcat-embed-websocket-9.0.36.jar
+2020-06-27 09:03:02,936 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/spring-boot-hibernate-0.0.1-SNAPSHOT/WEB-INF/lib/txw2-2.3.3.jar
+2020-06-27 09:03:02,937 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/surefire-reports/2020-06-20T17-35-57_579-jvmRun1.dump
+2020-06-27 09:03:02,937 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/surefire-reports/TEST-com.learning.springboothibernate.SpringBootHibernateApplicationTests.xml
+2020-06-27 09:03:02,937 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/surefire-reports/com.learning.springboothibernate.SpringBootHibernateApplicationTests.txt
+2020-06-27 09:03:02,938 org.owasp.dependencycheck.App:262
+DEBUG - Found file /src/target/test-classes/com/learning/springboothibernate/SpringBootHibernateApplicationTests.class
+2020-06-27 09:03:09,670 org.owasp.dependencycheck.Engine:486
+INFO  - Checking for updates
+2020-06-27 09:03:10,159 org.owasp.dependencycheck.data.nvdcve.CveDB:90
+DEBUG - Database dialect: H2
+2020-06-27 09:03:11,060 org.owasp.dependencycheck.data.nvdcve.CveDB:90
+DEBUG - Database dialect: H2
+2020-06-27 09:03:11,078 org.owasp.dependencycheck.data.update.nvd.UpdateableNvdCve:100
+DEBUG - Checking for updates from: https://nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-Modified.xml.gz
+2020-06-27 09:03:12,068 org.owasp.dependencycheck.data.nvdcve.CveDB:176
+DEBUG - Entering finalize
+2020-06-27 09:03:12,566 org.owasp.dependencycheck.utils.Downloader:265
+ERROR - IO Exception: HEAD request returned a non-200 status code
+2020-06-27 09:03:12,573 org.owasp.dependencycheck.utils.Downloader:266
+DEBUG - Exception details
+org.owasp.dependencycheck.utils.DownloadFailedException: HEAD request returned a non-200 status code
+	at org.owasp.dependencycheck.utils.Downloader.getLastModified(Downloader.java:259)
+	at org.owasp.dependencycheck.utils.Downloader.getLastModified(Downloader.java:221)
+	at org.owasp.dependencycheck.data.update.nvd.UpdateableNvdCve.add(UpdateableNvdCve.java:101)
+	at org.owasp.dependencycheck.data.update.NvdCveUpdater.retrieveCurrentTimestampsFromWeb(NvdCveUpdater.java:330)
+	at org.owasp.dependencycheck.data.update.NvdCveUpdater.getUpdatesNeeded(NvdCveUpdater.java:259)
+	at org.owasp.dependencycheck.data.update.NvdCveUpdater.update(NvdCveUpdater.java:79)
+	at org.owasp.dependencycheck.Engine.doUpdates(Engine.java:492)
+	at org.owasp.dependencycheck.Engine.analyzeDependencies(Engine.java:346)
+	at org.owasp.dependencycheck.App.runScan(App.java:271)
+	at org.owasp.dependencycheck.App.run(App.java:163)
+	at org.owasp.dependencycheck.App.main(App.java:68)
+2020-06-27 09:03:12,575 org.owasp.dependencycheck.utils.Settings:504
+DEBUG - Setting: downloader.quick.query.timestamp='false'
+2020-06-27 09:03:13,467 org.owasp.dependencycheck.utils.Downloader:265
+ERROR - IO Exception: GET request returned a non-200 status code
+2020-06-27 09:03:13,469 org.owasp.dependencycheck.utils.Downloader:266
+DEBUG - Exception details
+org.owasp.dependencycheck.utils.DownloadFailedException: GET request returned a non-200 status code
+	at org.owasp.dependencycheck.utils.Downloader.getLastModified(Downloader.java:259)
+	at org.owasp.dependencycheck.utils.Downloader.getLastModified(Downloader.java:274)
+	at org.owasp.dependencycheck.utils.Downloader.getLastModified(Downloader.java:221)
+	at org.owasp.dependencycheck.data.update.nvd.UpdateableNvdCve.add(UpdateableNvdCve.java:101)
+	at org.owasp.dependencycheck.data.update.NvdCveUpdater.retrieveCurrentTimestampsFromWeb(NvdCveUpdater.java:330)
+	at org.owasp.dependencycheck.data.update.NvdCveUpdater.getUpdatesNeeded(NvdCveUpdater.java:259)
+	at org.owasp.dependencycheck.data.update.NvdCveUpdater.update(NvdCveUpdater.java:79)
+	at org.owasp.dependencycheck.Engine.doUpdates(Engine.java:492)
+	at org.owasp.dependencycheck.Engine.analyzeDependencies(Engine.java:346)
+	at org.owasp.dependencycheck.App.runScan(App.java:271)
+	at org.owasp.dependencycheck.App.run(App.java:163)
+	at org.owasp.dependencycheck.App.main(App.java:68)
+2020-06-27 09:03:13,471 org.owasp.dependencycheck.data.update.NvdCveUpdater:88
+WARN  - Unable to download the NVD CVE data; the results may not include the most recent CPE/CVEs from the NVD.
+2020-06-27 09:03:13,472 org.owasp.dependencycheck.data.update.NvdCveUpdater:91
+INFO  - If you are behind a proxy you may need to configure dependency-check to use the proxy.
+2020-06-27 09:03:13,475 org.owasp.dependencycheck.Engine:349
+WARN  - Unable to update Cached Web DataSource, using local data instead. Results may not include recent vulnerabilities.
+2020-06-27 09:03:13,476 org.owasp.dependencycheck.Engine:351
+DEBUG - Update Error
+org.owasp.dependencycheck.data.update.exception.UpdateException: Unable to download the NVD CVE data.
+	at org.owasp.dependencycheck.data.update.NvdCveUpdater.update(NvdCveUpdater.java:94)
+	at org.owasp.dependencycheck.Engine.doUpdates(Engine.java:492)
+	at org.owasp.dependencycheck.Engine.analyzeDependencies(Engine.java:346)
+	at org.owasp.dependencycheck.App.runScan(App.java:271)
+	at org.owasp.dependencycheck.App.run(App.java:163)
+	at org.owasp.dependencycheck.App.main(App.java:68)
+Caused by: org.owasp.dependencycheck.utils.DownloadFailedException: Error making HTTP GET request.
+	at org.owasp.dependencycheck.utils.Downloader.getLastModified(Downloader.java:279)
+	at org.owasp.dependencycheck.utils.Downloader.getLastModified(Downloader.java:274)
+	at org.owasp.dependencycheck.utils.Downloader.getLastModified(Downloader.java:221)
+	at org.owasp.dependencycheck.data.update.nvd.UpdateableNvdCve.add(UpdateableNvdCve.java:101)
+	at org.owasp.dependencycheck.data.update.NvdCveUpdater.retrieveCurrentTimestampsFromWeb(NvdCveUpdater.java:330)
+	at org.owasp.dependencycheck.data.update.NvdCveUpdater.getUpdatesNeeded(NvdCveUpdater.java:259)
+	at org.owasp.dependencycheck.data.update.NvdCveUpdater.update(NvdCveUpdater.java:79)
+	... 5 common frames omitted
+Caused by: org.owasp.dependencycheck.utils.DownloadFailedException: GET request returned a non-200 status code
+	at org.owasp.dependencycheck.utils.Downloader.getLastModified(Downloader.java:259)
+	... 11 common frames omitted
+2020-06-27 09:03:13,963 org.owasp.dependencycheck.data.nvdcve.CveDB:90
+DEBUG - Database dialect: H2
+2020-06-27 09:03:13,996 org.owasp.dependencycheck.Engine:359
+ERROR - No documents exist
+
+Unable to continue dependency-check analysis.
+2020-06-27 09:03:13,997 org.owasp.dependencycheck.Engine:360
+DEBUG - 
+org.owasp.dependencycheck.exception.NoDataException: No documents exist
+	at org.owasp.dependencycheck.Engine.ensureDataExists(Engine.java:555)
+	at org.owasp.dependencycheck.Engine.analyzeDependencies(Engine.java:357)
+	at org.owasp.dependencycheck.App.runScan(App.java:271)
+	at org.owasp.dependencycheck.App.run(App.java:163)
+	at org.owasp.dependencycheck.App.main(App.java:68)
+2020-06-27 09:03:13,998 org.owasp.dependencycheck.App:180
+ERROR - One or more fatal errors occured
+2020-06-27 09:03:13,998 org.owasp.dependencycheck.App:185
+ERROR - Unable to download the NVD CVE data.
+2020-06-27 09:03:13,999 org.owasp.dependencycheck.App:185
+ERROR - No documents exist
+2020-06-27 09:03:13,999 org.owasp.dependencycheck.App:69
+DEBUG - Exit code: -13

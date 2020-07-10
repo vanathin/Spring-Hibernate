@@ -128,6 +128,7 @@ public class WorkerDAOImpl {
                     resourceDAOImpl.propagationSupport(r); //Caller method should have Transaction, else calling method throws exception
                     return worker.getId();
                 }).orElseGet(worker::getId);
+
         return worker.getId();
     }
 
